@@ -27,3 +27,6 @@ newman run postman-collection/chatbot_collection.json -r cli,html --reporter-htm
 - Identified 5+ chatbot logic issues  
 - Improved intent accuracy  
 - Prevented incorrect responses in edge cases  
+## 📊 Test Report
+
+[View Report](automation/report.html)
