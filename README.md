@@ -30,3 +30,4 @@ newman run postman-collection/chatbot_collection.json -r cli,html --reporter-htm
 ## 📊 Test Report
 
 [View Report](automation/report.html)
+![Report](automation/report.png)
