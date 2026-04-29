@@ -1,0 +1,9 @@
+name: Chatbot Test
+on: [push]
+jobs:
+ test:
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v3
+  - run: npm install -g newman
+  - run: newman run postman-collection/chatbot_collection.json
