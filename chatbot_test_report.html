@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot API Test Report</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        h1 { color: #2c3e50; }
+        .pass { color: green; }
+        .fail { color: red; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px;}
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+
+<h1>🤖 Chatbot API Test Report</h1>
+
+<p><strong>Total Tests:</strong> 5</p>
+<p><span class="pass">Passed:</span> 3</p>
+<p><span class="fail">Failed:</span> 2</p>
+
+<h2>Test Results</h2>
+
+<table>
+<tr>
+<th>Test Case</th>
+<th>Input</th>
+<th>Expected</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>TC001</td>
+<td>Hello</td>
+<td>Greeting Response</td>
+<td class="pass">PASS</td>
+</tr>
+
+<tr>
+<td>TC002</td>
+<td>Book hotel</td>
+<td>Booking Intent</td>
+<td class="pass">PASS</td>
+</tr>
+
+<tr>
+<td>TC003</td>
+<td>Cancel booking</td>
+<td>Cancel Intent</td>
+<td class="fail">FAIL</td>
+</tr>
+
+<tr>
+<td>TC004</td>
+<td>""</td>
+<td>Fallback Response</td>
+<td class="fail">FAIL</td>
+</tr>
+
+<tr>
+<td>TC005</td>
+<td>bokking hotel</td>
+<td>Booking Intent</td>
+<td class="pass">PASS</td>
+</tr>
+
+</table>
+
+<h2>Summary</h2>
+<ul>
+<li>Detected incorrect intent classification</li>
+<li>Missing fallback response</li>
+<li>System handles typo inputs correctly</li>
+</ul>
+
+</body>
+</html>
